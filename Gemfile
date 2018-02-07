@@ -31,17 +31,17 @@ gem 'autoprefixer-rails'
 gem 'font-awesome-rails'
 
 group :development do
+  gem 'web-console', '>= 3.3.0'
   gem 'spring'
   gem 'letter_opener'
 end
 
 group :development, :test do
-  gem 'puma'
+  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
 group :production do
   gem 'pg'
-  gem 'unicorn'
   gem 'rails_12factor'
 end
 
