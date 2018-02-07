@@ -3,7 +3,8 @@ ruby '~> 2.3.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '5.0.2'
-gem 'mysql2', '>= 0.3.18', '< 0.5'
+# gem 'mysql2', '>= 0.3.18', '< 0.5'
+gem 'sqlite3'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0.0'
@@ -34,7 +35,7 @@ group :development, :test do
 end
 
 group :production do
-  gem 'pg'
+  # gem 'pg'
   gem 'unicorn'
   gem 'rails_12factor'
 end
