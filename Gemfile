@@ -31,11 +31,10 @@ end
 
 group :development, :test do
   gem 'puma'
-  # gem 'sqlite3'
 end
 
 group :production do
-  # gem 'pg'
+  gem 'pg'
   gem 'unicorn'
   gem 'rails_12factor'
 end
